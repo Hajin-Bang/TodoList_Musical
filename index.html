@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Musical-Todo</title>
+  </head>
+  <body>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="7"
+        placeholder="What is your name?"
+        type="text"
+      />
+      <button>Log In</button>
+    </form>
+    <h1 id="greetings" class="hidden"></h1>
+    <div id="todo-box">
+      <h3 id="todo-title">To Do List</h3>
+      <form id="todo-form">
+        <input type="text" placeholder="Write your task" />
+      </form>
+      <ul id="todo-list">
+        <li>노마드 코더 11강 듣기</li>
+        <li>노마드 코더 11강 듣기</li>
+      </ul>
+    </div>
+    <div id="date-time">
+      <h1 id="date">0000-00-00</h1>
+      <h2 id="time">00:00:00</h2>
+    </div>
+    <div id="music-box">
+      <h3 id="music-title">Today's Song</h3>
+    </div>
+    <div id="theme-box">
+      <h3>Select your theme</h3>
+    </div>
+    <div id="quote">
+      <span
+        >저 하늘에 반짝이는 새하얀 별들이 우리를 좋은 일로 이끌어줄거야</span
+      >
+      <span>- 뮤지컬 Ann 중 -</span>
+    </div>
+    <div id="weather-box">
+      <h3>Weather</h3>
+      <div>
+        <p>Clear 28.9</p>
+        <p>Seoul</p>
+      </div>
+    </div>
+    <script src="./js/apikey.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/playlist.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>
