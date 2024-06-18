@@ -1,7 +1,51 @@
-body {
-  background-color: #ffdede;
+/* header - login */
+header {
+  position: fixed;
+  right: 3vw;
 }
 
-.hidden {
-  display: none;
+/* #login-form input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  padding: 10px;
+} */
+
+#greetings {
+  font-size: 20px;
+}
+
+/* main */
+main {
+  padding: 10vh 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
+}
+
+/* todo */
+#todo-box {
+  height: 80vh;
+}
+
+#todo-title {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  background-color: #f2eeee;
+  border-radius: 10px 10px 0 0;
+  /* padding-bottom: 18px; */
+  /* border-bottom: 1.5px solid #9e9d9d; */
+}
+
+#todo-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+#todo-form input {
+  width: 80%;
 }
