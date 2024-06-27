@@ -30,13 +30,7 @@ main {
 }
 
 #todo-title {
-  padding: 15px;
-  margin: 0;
-  text-align: center;
   background-color: #f2eeee;
-  border-radius: 10px 10px 0 0;
-  /* padding-bottom: 18px; */
-  /* border-bottom: 1.5px solid #9e9d9d; */
 }
 
 #todo-form {
@@ -48,4 +42,54 @@ main {
 
 #todo-form input {
   width: 80%;
+}
+
+/* 가운데 열 */
+#center-column {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  gap: 2vh;
+}
+
+/* 날짜/시간 */
+#date-time {
+  text-align: center;
+}
+
+#time {
+  font-weight: 900;
+  color: var(--main-color);
+  font-size: xx-large;
+}
+
+/* 오른쪽 열 */
+#right-column {
+  display: grid;
+  grid-template-rows: 0.7fr 1.5fr 1fr;
+  gap: 2vh;
+}
+
+/* 음악 플레이어 */
+#music-box {
+  background-color: var(--main-color);
+}
+
+/* 테마 */
+#theme-box {
+  background-color: var(--main-color);
+}
+
+#img-box {
+  margin: 1vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+img {
+  width: 3vw;
+}
+
+.pink {
+  background-color: --m;
 }

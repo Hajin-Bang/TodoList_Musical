@@ -1,5 +1,25 @@
+/* :root {
+  --main-color: #ffdede;
+}
+
+.pink {
+  --main-color: #ffdede;
+}
+.blue {
+  --main-color: #bcd7ef;
+}
+.purple {
+  --main-color: #d3d7f9;
+}
+.green {
+  --main-color: #cfead0;
+}
+.gray {
+  --main-color: #dcdcdc;
+} */
+
 body {
-  background-color: #ffdede;
+  background-color: var(--main-color);
   color: #666666;
 }
 
@@ -11,6 +31,15 @@ section {
   border: 1.5px solid #9e9d9d;
   border-radius: 10px;
   box-shadow: 0 1px 1px 0 #9e9d9d;
+}
+
+h3 {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  /* padding-bottom: 18px; */
+  /* border-bottom: 1.5px solid #9e9d9d; */
 }
 
 input {
