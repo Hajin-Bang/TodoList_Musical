@@ -31,6 +31,7 @@ section {
   border: 1.5px solid #9e9d9d;
   border-radius: 10px;
   box-shadow: 0 1px 1px 0 #9e9d9d;
+  overflow-y: scroll;
 }
 
 h3 {
