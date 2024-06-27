@@ -21,14 +21,10 @@ function paintTodo(newTodo) {
   li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
-  const modifyButton = document.createElement("button");
   const deleteButton = document.createElement("button");
-  modifyButton.innerText = "✐";
   deleteButton.innerText = "✕";
-  //   modifyButton.addEventListener("click", modifyTodo);
   deleteButton.addEventListener("click", deleteTodo);
   li.appendChild(span);
-  li.appendChild(modifyButton);
   li.appendChild(deleteButton);
   todoList.appendChild(li);
 }
