@@ -1,22 +1,8 @@
-/* :root {
+:root {
   --main-color: #ffdede;
+  --darkBack-color: #ffd3d3;
+  --darkFont-color: #f49a9a;
 }
-
-.pink {
-  --main-color: #ffdede;
-}
-.blue {
-  --main-color: #bcd7ef;
-}
-.purple {
-  --main-color: #d3d7f9;
-}
-.green {
-  --main-color: #cfead0;
-}
-.gray {
-  --main-color: #dcdcdc;
-} */
 
 body {
   background-color: var(--main-color);
@@ -32,6 +18,10 @@ section {
   border-radius: 10px;
   box-shadow: 0 1px 1px 0 #9e9d9d;
   overflow-y: scroll;
+}
+
+.dark-background {
+  background-color: var(--darkBack-color);
 }
 
 h3 {

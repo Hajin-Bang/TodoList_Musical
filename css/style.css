@@ -44,6 +44,16 @@ main {
   width: 80%;
 }
 
+#todo-list li {
+  width: 90%;
+}
+
+#todo-list button {
+  margin-left: 10px;
+  background-color: #f4f4f470;
+  border-color: #f4f4f470;
+}
+
 /* 가운데 열 */
 #center-column {
   display: grid;
@@ -56,18 +66,19 @@ main {
 #date-time {
   text-align: center;
   height: 20vh;
+  background-color: #fff;
 }
 
 #time {
   font-weight: 900;
-  color: var(--main-color);
-  font-size: xx-large;
+  color: var(--darkFont-color);
+  font-size: 3em;
+  margin: 0 auto;
 }
 
 /* 음악 플레이어 */
 #music-box {
   height: 55vh;
-  background-color: var(--main-color);
   padding: 0 5% 5% 5%;
 }
 
@@ -99,7 +110,6 @@ main {
 /* 테마 */
 #theme-box {
   height: 20vh;
-  background-color: var(--main-color);
 }
 
 #img-box {
@@ -113,14 +123,14 @@ img {
   width: 3vw;
 }
 
-/* .pink {
-  background-color: --m;
-} */
-
 /* 명대사 */
 #quote {
-  height: 23vh;
+  height: 15vh;
   padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
 }
 
 #quote span:first-child {
@@ -133,10 +143,11 @@ img {
 #quote span:last-child {
   font-size: 1em;
   font-weight: 500;
+  align-self: flex-end;
 }
 
 #weather-box {
-  height: 20vh;
+  height: 28vh;
 }
 
 #weather-box div {
@@ -144,7 +155,7 @@ img {
 }
 
 #weather-box p:first-child {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: 800;
 }
 
