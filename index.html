@@ -46,11 +46,17 @@
         <section id="music-box" class="dark-background">
           <h3 id="music-title">Today's Song</h3>
           <div id="player"></div>
-          <img id="thumbnail" src="./img/thumbnail1.webp" alt="Thumbnail" />
+          <img id="thumbnail" />
           <div class="controls">
-            <button id="prev">⏪️</button>
-            <button id="play-pause">▶️</button>
-            <button id="next">⏩️</button>
+            <button id="backward">
+              <img src="./img/music_skip_backward.svg" alt="skip_backward" />
+            </button>
+            <button id="play-pause">
+              <img src="./img/music_play.svg" alt="play_music" />
+            </button>
+            <button id="forward">
+              <img src="./img/music_skip_forward.svg" alt="skip_forward" />
+            </button>
           </div>
         </section>
       </div>
@@ -88,6 +94,7 @@
     <script src="./js/todo.js"></script>
     <script src="./js/date.js"></script>
     <script src="./js/playlist.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./js/theme.js"></script>
     <script src="./js/quotes.js"></script>
     <script src="./js/weather.js"></script>
