@@ -4,40 +4,56 @@ const purple = document.getElementById("purple");
 const green = document.getElementById("green");
 const gray = document.getElementById("gray");
 
-const time = document.getElementById("time");
-const musicBox = document.getElementById("music-box");
-const themeBox = document.getElementById("theme-box");
+const root = document.documentElement;
 
-let nowTheme = "";
+const themes = {
+  pink: {
+    mainColor: "#ffdede",
+    darkBackColor: "#ffd3d3",
+    darkFontColor: "#f49a9a",
+  },
+  blue: {
+    mainColor: "#bcd7ef",
+    darkBackColor: "#81c2f2",
+    darkFontColor: "#3c77ea",
+  },
+  purple: {
+    mainColor: "#d3d7f9",
+    darkBackColor: "#eac4fc",
+    darkFontColor: "#d56bde",
+  },
+  green: {
+    mainColor: "#cfead0",
+    darkBackColor: "#a2dba5",
+    darkFontColor: "#62d546",
+  },
+  gray: {
+    mainColor: "#dcdcdc",
+    darkBackColor: "#c5c5c5",
+    darkFontColor: "#9d9c9c",
+  },
+};
 
-// function saveNowTheme(nowTheme) {
-//   localStorage.setItem("theme", nowTheme);
-// }
+function changeTheme(theme) {
+  const colors = themes[theme];
+  root.style.setProperty("--main-color", colors.mainColor);
+  root.style.setProperty("--darkBack-color", colors.darkBackColor);
+  root.style.setProperty("--darkFont-color", colors.darkFontColor);
 
-// function changeTheme(event) {
-//   nowTheme = event.target.id;
-//   time.classList.add(nowTheme);
-//   musicBox.classList.add(nowTheme);
-//   themeBox.classList.add(nowTheme);
+  localStorage.setItem("theme", theme);
+}
 
-//   saveNowTheme(nowTheme);
-// }
+pink.addEventListener("click", () => changeTheme("pink"));
+blue.addEventListener("click", () => changeTheme("blue"));
+purple.addEventListener("click", () => changeTheme("purple"));
+green.addEventListener("click", () => changeTheme("green"));
+gray.addEventListener("click", () => changeTheme("gray"));
 
-// pink.addEventListener("click", changeTheme);
-// blue.addEventListener("click", changeTheme);
-// purple.addEventListener("click", changeTheme);
-// green.addEventListener("click", changeTheme);
-// gray.addEventListener("click", changeTheme);
-
-// const savedTheme = localStorage.getItem("theme");
-// const DEFAULT_THEME = "pink";
-
-// if (savedTheme) {
-//   time.classList.add(savedTheme);
-//   musicBox.classList.add(savedTheme);
-//   themeBox.classList.add(savedTheme);
-// } else {
-//   time.classList.add(DEFAULT_THEME);
-//   musicBox.classList.add(DEFAULT_THEME);
-//   themeBox.classList.add(DEFAULT_THEME);
-// }
+window.addEventListener("load", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme && themes[savedTheme]) {
+    changeTheme(savedTheme);
+  } else {
+    changeTheme("pink");
+  }
+});
