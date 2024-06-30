@@ -4,14 +4,6 @@ header {
   right: 3vw;
 }
 
-/* #login-form input {
-  background-color: transparent;
-  border-color: transparent;
-  border-bottom: 1px solid #000;
-  text-align: center;
-  padding: 10px;
-} */
-
 #greetings {
   font-size: 20px;
 }
@@ -44,8 +36,13 @@ main {
   width: 80%;
 }
 
+#todo-list {
+  padding-inline-start: 10%;
+}
+
 #todo-list li {
   width: 90%;
+  margin: 10px 0;
 }
 
 #todo-list button {
@@ -107,7 +104,6 @@ main {
 /* 오른쪽 열 */
 #right-column {
   display: grid;
-  /* grid-template-rows: 1fr 1.5fr 1.4fr; */
   gap: 2vh;
   height: 80vh;
 }
@@ -135,7 +131,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-end; */
 }
 
 #quote span:first-child {
